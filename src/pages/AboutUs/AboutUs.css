@@ -1,0 +1,13 @@
+h2{
+  color: #f3f3;
+  text-align: center;
+  background-color: #f4f4;
+  padding: 10px;
+}
+
+p{
+  background-color: #f4f4;
+  padding: 10px;
+  text-align: center;
+  text-decoration: underline;
+}

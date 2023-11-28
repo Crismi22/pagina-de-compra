@@ -1,0 +1,53 @@
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #818181;
+  color: #fff;
+  margin: 0px;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  nav {
+    display: none; /* Oculta el menú de navegación en pantallas pequeñas */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Ajusta según tu necesidad para evitar que se superponga con el contenido */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+  }
+
+  nav.show {
+    display: flex; /* Muestra el menú cuando tiene la clase 'show' */
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  /* Estilos del botón de hamburguesa */
+  .navbar-toggler-icon{
+    background-color: #fff;
+    background-image: none !important;
+  }
+}
+
